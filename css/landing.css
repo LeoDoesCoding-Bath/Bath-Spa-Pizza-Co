@@ -1,0 +1,21 @@
+#pageCont{
+	display: grid;
+	padding: 0% 34%;
+	text-align: center;
+}
+
+#title{
+	color: white;
+	text-align: center;
+	padding-top: 8%;
+	font-size: 36px;
+}
+
+.buttonUl li a {
+	padding: 4% 0;
+}
+
+body {
+	background-image: url("../images/landingBG.jpg");
+	background-size: cover;
+}

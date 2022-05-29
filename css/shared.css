@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+
+body {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	background: #212121;
+	color: white;
+	overflow-x: clip;
+	font-size: 26px;
+}
+
+header{
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr;
+    grid-template-rows: 70px 180px 0px;
+}
+
+#top{
+	grid-column: 1;
+	grid-row: 1;
+	height: 100%;
+	width: 100%;
+	padding: 10px 30px;
+	margin: auto;
+	vertical-align: middle;
+	color: white;
+	font-size: 35px;
+}
+
+
+#banner{
+	background: pink;
+	display: block;
+	grid-column: 1;
+	grid-row: 2;
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+	overflow: hidden;
+}
+
+#banner img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+#nav{
+	background: linear-gradient(90deg, #212121 78%, yellow 20%);
+	margin-right: -40px;
+	border-right: 20% solid yellow;
+	grid-column: 1;
+	grid-row: 3;
+}
+
+
+.buttonUl {
+  list-style-type: none;
+  padding-top: 0.4%;
+  margin-top: 0.7%;
+  margin-bottom: 0.5%;
+  width: 98%;
+  display: flex;
+  overflow: hidden;
+}
+
+.buttonUl li {
+  width: 100%;
+}
+
+.buttonUl li a {
+	height: 50%;
+	width: 80%;
+	padding: 2.8% 0;
+	display: block;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 24px;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  padding: 15px;
+  padding-left: 30px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  background: #898080;
+  color: white;
+}
+
+
+#address{
+	text-align: left;
+}
+
+#footText{
+	align-self: end;
+}
+
+main {
+	padding: 5% 4%;
+}
+
+h2{
+	margin: 0;
+	font-size: 30px;
+}
+
+main a {
+	color: yellow;
+}
+
+.clickable {
+	text-decoration: none;
+	color: white;
+}
+
+input{
+	padding: 5px;
+	height: 27px;
+}
+
+.page_title{
+	margin-bottom: 20px;
+	padding-left: 50px;
+}
+
+h3 {
+	padding-left: 30px;
+	color: red;
+	grid-column: span 3;
+	font-size: 20px;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,60 @@
+#container {
+	display: grid;
+	width: 95%;
+	grid-template-columns: 1.5fr 1.5fr 0.7fr;
+	column-gap: 20px;
+}
+
+.griditem {
+	width: 100%;
+	background: grey;
+	margin: 20px;
+}
+
+#delbox{
+	background: white;
+}
+
+input {
+	margin: 10px 20px;
+}
+
+.option{
+	color: black;
+}
+
+main .buttonUl li a {
+	background: Brown;
+	color: white;
+}
+
+
+
+table {
+	background: white;
+	color: black;
+	height: 300px;
+}
+
+table td {
+    border-top: 1px solid silver;
+	padding: 2% 3%;
+	font-size: 20px;
+}
+
+#total {
+	width: 70%;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	float: right;
+	height: 10%;
+}
+
+#total li a {
+	position: relative;
+	width: 30%;
+	height: 40%;
+	float: right;
+	right: 20px;
+}

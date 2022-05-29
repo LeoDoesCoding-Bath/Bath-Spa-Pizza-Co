@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+
+
+#header{
+	width: 100%;
+	position: absolute;
+	display: grid;
+	top: 0;
+	left: 0;
+	align-items: center;
+	grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px 170px 50px;
+	border: 3px solid black;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 5px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+li {
+  width: 100%;
+}
+
+li a {
+	height: 50%;
+	width: 80%;
+	padding: 3% 0;
+	display: block;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 24px;
+	text-align: center;
+	color: black;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	text-decoration: none;
+}
+
+#checkout{
+	background: yellow;
+	grid-column: 8;
+	grid-row: 3;
+}
+
+#nav{
+	background: green;
+	grid-column: 1 / 8;
+	grid-row: 3;
+}
+
+#topBar{
+	background: yellow;
+	display: block;
+	grid-column: 1 / 7;
+	grid-row: 1;
+}
+
+#topleft{
+	background: black;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#topright{
+	background: black;
+	grid-column: 6 / 9;
+	grid-row: 1;
+}
+
+#banner{
+	background: pink;
+	display: block;
+	grid-column: 1 / 9;
+	grid-row: 2;
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/shared.css">
+		<link rel="stylesheet" href="css/checkout.css">
+		<link rel="stylesheet" href="https://fonts.google.com/specimen/Carrois+Gothic+SC">
+		<title>Bath Spa Pizza Co</title>
+
+		<script type="text/javascript">
+			function selectbox(id) {
+				var box = document.getElementsByClassName('griditem');
+					for(var i = 0; i < box.length -1; i++){
+						box[i].style.backgroundColor = "grey";
+					}
+				id.style.backgroundColor = "white";
+			}
+		</script>
+		
+	</head>
+	<body>
+		<header>
+			<div id="top"><span class="centSpan">Bath Spa Pizza Co</span></div>
+			<div id="banner"><img src="images/banner.jpg"/></div>
+			<div id="nav">
+				<ul class="buttonUl">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+				<div id="checkout"></div>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<h2>Checkout</h2>Select an option<br>
+			<div id="container">
+				<div class="griditem" id="delbox">
+					<label class="option">
+						<input type="radio" checked="checked" id="devlivery" name="option" onClick="selectbox(delbox)">Delivery (+£2)
+						<span class="checkmark"></span>
+					</label>
+					<input class="fullInp" type="text" placeholder="Address line 1" style="width: 80%;"><br>
+					<input class="fullInp" type="text" placeholder="Address line 2" style="width: 80%;"><br>
+					<input class="fullInp" type="text" placeholder="Postcode" style="width: 80%;"><br>
+					<input class="fullInp" type="text" placeholder="Phone number" style="width: 80%;"><br>
+					<ul class="buttonUl"><li><a>Check Address</a></li>
+				</div>
+				<div class="griditem" id="colbox">
+					<label class="option">
+						<input type="radio" id="collection" name="option" onClick="selectbox(colbox)">Collection
+						<span class="checkmark"></span>
+					</label><br>
+					<input class="fullInp" type="text" placeholder="Phone number" style="width: 80%;"><br>
+					<p style="color: black;font-size: 20px;padding: 20px;"> You will be texted or called when your order is ready for collection.</p>
+				</div>
+				<div class="griditem" style="background:white; margin-left: 70px;">
+					<table>
+						<tr><td width="300"><td></tr>
+						<tr><td width="300"></td></tr>
+						<tr><td width="300"></td></tr>
+						<tr><td width="300"></td></tr>
+						<tr><td width="300"></td></tr>
+						<tr height="20"><td width="300" style="border-top: 2px solid black; text-align: right;"> Total: £0.00</td></tr>
+					</table>
+				</div>
+			</div><br>
+			<div id="total">
+				<p style="color: black;">Total: £0.00</p><ul class="buttonUl"><li><a>Proceed to payment</a></li>
+			</div>
+		</main>
+		
+		<br><br>
+		<footer>
+			<div id="address">Newton Park campus<br>Newton Saint Loe<br>Bath<br>BA2 9BN</div>
+			<div id="footText"><a href="nutrition.html">Nutrition info</a><br>2022 Bath Spa Pizza Company</div>
+			<div></div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="widtd=device-widtd">
+		<link rel="stylesheet" href="css/shared.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="https://fonts.google.com/specimen/Carrois+Gotdic+SC">
+		<title>Batd Spa Pizza Co</title>
+		
+		<script>
+			window.scroll({
+				behavior: 'smooth'
+			});
+			function menuScroll(position) {
+				location.href = (position);
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div id="top"><span class="centSpan">Bath Spa Pizza Co</span></div>
+			<div id="banner"><img src="images/banner.jpg"/></div>
+			<div id="nav">
+				<ul class="buttonUl">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+				<div id="checkout"></div>
+				</ul>
+			</div>
+		</header>
+		
+		<main>
+			<table>
+				<tr onclick="menuScroll('#pizzas')"><td><b>Pizzas</b></td></tr>
+				<tr onclick="menuScroll('#meat')"><td>&nbsp;&nbsp;Meat</td></tr>
+				<tr onclick="menuScroll('#veggie')"><td>&nbsp;&nbsp;Vegeatrain</td></tr>
+				<tr onclick="menuScroll('#vegan')"><td>&nbsp;&nbsp;Vegan</td></tr>
+				<tr onclick="menuScroll('#sides')"><td><b>Sides</b></td></tr>
+				<tr onclick="menuScroll('#drinks')"><td><b>Drinks</b></td></tr>
+				<tr onclick="menuScroll('#desserts')"><td><b>Desserts</b></td></tr>
+			</table>
+			
+			
+			<div id="menu_grid">
+				<h2>Menu<h2>
+				<a class="anchor" id="pizzas"></a>
+				<a class="anchor" id="meat"></a><h3>Meat Pizzas</h3>
+				<div class="item"><a href="#addItem" class="clickable"><img src="images/pepperoni.png"/><br><b>Pepperoni</b><br>£8</a></div>
+				<div class="item"><a href="#addItem" class="clickable"><img src="images/pepper.png"/><br><b>Chicken & Tomato</b><br>£8</a></div>
+				<div class="item"><a href="#addItem" class="clickable"><img src="images/shrimp.png"/><br><b>Shrimp</b><br>£8</a></div>
+				<a class="anchor" id="veggie"></a><h3>Vegetarian Pizzas</h3>
+				<div class="item"><a href="#addItem" class="clickable"><img src="images/cheese.png"/><br><b>Cheese</b><br>£8</a></div>
+				<a class="anchor" id="vegan"></a><h3>Vegan Pizzas</h3>
+				<div class="item"><a href="#addItem" class="clickable"><img src="images/veggie.png"/><br><b>Veggetable</b><br>£8</a></div>
+			</div>
+		</main>
+		
+		<footer>
+			<div id="address">Newton Park campus<br>Newton Saint Loe<br>Bath<br>BA2 9BN</div>
+			<div id="footText"><a href="nutrition.html">Nutrition info</a><br>2022 Bath Spa Pizza Company</div>
+			<div></div>
+		</footer>
+	</body>
+</html>
